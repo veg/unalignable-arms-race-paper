@@ -1,0 +1,92 @@
+\begin{table*}[t]
+\centering
+\caption{\textbf{Multi-modal evolutionary Atlas across all 25 Tier-1 mammalian loci.} All runs began from raw unaligned CDS (\texttt{-u --coevolution --keep-pseudogenes}); \texttt{S-PRIME} used conservative Ridge shrinkage ($\lambda=0.5$). Sel.\% gives sites under \WALRUS diversifying, toggle, or convergent selection (BH $q \le 0.10$); Art. gives POA-eliminated rigid-MSA false positives; $\Delta\text{pI}$ gives \texttt{S-PRIME} isoelectric-point changing sites (marginal Holm $p\le 0.10$ / strict two-stage).}
+\label{tab:tier1_atlas}
+\small
+\setlength{\tabcolsep}{4.2pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}l r r r r r r r r r@{}}
+\toprule
+\textbf{Gene} & \textbf{Taxa} & \textbf{Ref/MSA} & \textbf{Ins.} & \textbf{Gap\%} & \textbf{Sel.\%} & \textbf{\BUSTEDE $p$} & \textbf{Art.} & \textbf{$\Delta\text{pI}$ (M/S)} & \textbf{LoF / Coev} \\
+\midrule
+\multicolumn{10}{@{}l}{\textit{Arm A: Antiviral Effectors \& Innate Sensors ($n = 14$)}} \\
+\quad \texttt{TRIM5} & 67 & 493/595 & 92 & 16.4 & 21.9 & $1.000$ & 6 & 16/0 & 1 (+1) / 25 \\
+\quad \texttt{MX1} & 80 & 662/955 & 121 & 31.1 & 15.1 & $1.3\times 10^{-12}$ & 7 & 18/0 & 10 (+4) / 25 \\
+\quad \texttt{APOBEC3G} & 22 & 384/411 & 20 & 7.0 & 33.6 & $9.4\times 10^{-49}$ & 0 & 4/0 & 1 / 15 \\
+\quad \texttt{APOBEC3H} & 69 & 200/368 & 136 & 45.4 & 16.0 & $3.1\times 10^{-41}$ & 11 & 17/0 & 5 / 7 \\
+\quad \texttt{ISG15} & 72 & 165/241 & 74 & 30.5 & 21.2 & $0.0095$ & 12 & 11/6 & 0 / 2 \\
+\quad \texttt{SAMHD1} & 72 & 626/731 & 93 & 15.0 & 23.7 & $2.9\times 10^{-17}$ & 4 & 20/1 & 6 / 25 \\
+\quad \texttt{STAT2} & 72 & 851/1187 & 229 & 28.1 & 22.1 & $0.066$ & 24 & 13/1 & 7 / 25 \\
+\quad \texttt{IRF3} & 72 & 427/604 & 107 & 29.5 & 18.2 & $1.0\times 10^{-4}$ & 21 & 14/2 & 3 / 25 \\
+\quad \texttt{TRIM25} & 72 & 630/720 & 61 & 12.4 & 34.2 & $2.0\times 10^{-7}$ & 8 & 4/2 & 5 / 24 \\
+\quad \texttt{BST2} & 72 & 180/289 & 89 & 37.9 & 18.0 & $5.3\times 10^{-19}$ & 11 & 11/1 & 2 / 0 \\
+\quad \texttt{EIF2AK2} & 72 & 551/765 & 171 & 28.5 & 26.7 & $1.9\times 10^{-58}$ & 7 & 22/6 & 3 / 9 \\
+\quad \texttt{OAS1} & 72 & 400/613 & 179 & 38.6 & 23.6 & $1.3\times 10^{-42}$ & 20 & 34/12 & 3 / 12 \\
+\quad \texttt{MAVS} & 72 & 540/893 & 235 & 40.6 & 16.8 & $9.1\times 10^{-24}$ & 16 & 19/0 & 6 / 25 \\
+\quad \texttt{NLRP1} & 55 & 1473/2231 & 534 & 36.0 & 17.1 & $2.9\times 10^{-34}$ & 51 & 70/0 & 3 / 25 \\
+\midrule
+\multicolumn{10}{@{}l}{\textit{Arm B: Viral Entry Receptors ($n = 5$)}} \\
+\quad \texttt{ACE2} & 72 & 805/843 & 35 & 4.9 & 31.6 & $1.7\times 10^{-39}$ & 3 & 18/3 & 1 / 25 \\
+\quad \texttt{DPP4} & 72 & 766/775 & 8 & 1.2 & 29.6 & $1.9\times 10^{-15}$ & 0 & 9/0 & 1 / 23 \\
+\quad \texttt{CD4} & 72 & 458/608 & 106 & 24.7 & 27.5 & $3.8\times 10^{-34}$ & 6 & 24/0 & 2 / 0 \\
+\quad \texttt{TFRC} & 72 & 760/803 & 25 & 4.9 & 30.4 & $2.0\times 10^{-6}$ & 0 & 14/2 & 5 / 25 \\
+\quad \texttt{NPC1} & 55 & 1278/1474 & 35 & 13.5 & 18.1 & $1.7\times 10^{-4}$ & 2 & 11/2 & 6 / 25 \\
+\midrule
+\multicolumn{10}{@{}l}{\textit{Arm C: Tandem-Repeat Meiotic Benchmark ($n = 1$)}} \\
+\quad \texttt{PRDM9} & 50 & 894/1334 & 319 & 37.1 & 13.1 & $4.2\times 10^{-35}$ & 48 & 40/3 & 6 (+2) / 25 \\
+\midrule
+\multicolumn{10}{@{}l}{\textit{Arm D: Hijacked Cellular Host Hubs --- Controls ($n = 5$)}} \\
+\quad \texttt{PPIA} & 72 & 165/224 & 24 & 26.6 & 6.7 & $0.115$ & 6 & 0/0 & 6 / 0 \\
+\quad \texttt{ELOB} & 72 & 118/199 & 67 & 37.5 & 3.0 & $1.000$ & 14 & 0/0 & 3 / 25 \\
+\quad \texttt{ANP32A} & 72 & 249/268 & 15 & 7.3 & 12.3 & $1.000$ & 2 & 0/0 & 6 / 2 \\
+\quad \texttt{RAE1} & 72 & 368/461 & 0 & 19.9 & 0.7 & $1.000$ & 0 & 1/0 & 4 / 0 \\
+\quad \texttt{YWHAZ} & 72 & 245/245 & 0 & 0.5 & 0.0 & $1.000$ & 0 & 0/0 & 1 / 0 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\caption{\textbf{Atomic-resolution ($d_{\min} \le 4.5$\,\AA) structural interface enrichment.} Resolved human residues in 19 non-fusion PDB co-structures are partitioned strictly by heavy-atom distance to the viral or nucleic-acid partner chain ($\le 4.5$\,\AA\ direct contact vs.\ $>8.0$\,\AA\ protein core; for \texttt{SAMHD1} 4CC9, where only the 19-aa C-terminal Vpx degron is resolved, non-contact compares $>4.5$\,\AA).}
+\label{tab:pdb_atomic}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}l l r r r r r@{}}
+\toprule
+\textbf{Gene} & \textbf{Partner Complex (PDB)} & \textbf{Contact ($\le 4.5$\,\AA)} & \textbf{Core ($>8.0$\,\AA)} & \textbf{OR} & \textbf{Fisher $p$} & \textbf{Gap$_{\le 4.5}$ / Gap$_{\text{unmod}}$} \\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Conflict Complexes: Antiviral Effectors \& Sensors ($n = 8$)}} \\
+\quad \texttt{APOBEC3G} & HIV-1 Vif (8CX0) & 6/13 (46.1\%) & 117/340 (34.4\%) & 1.63$\times$ & $0.277$ & 0.0\% / 30.1\% \\
+\quad \texttt{APOBEC3H} & HIV-1 Vif (8FVI) & 7/13 (53.9\%) & 32/144 (22.2\%) & 4.08$\times$ & $0.019$ & 1.0\% / 69.6\% \\
+\quad \texttt{ISG15} & FluB NS1B / PLpro (3SDL,5TL6) & 11/42 (26.2\%) & 23/68 (33.8\%) & 0.69$\times$ & $0.854$ & 3.5\% / 29.6\% \\
+\quad \texttt{SAMHD1} & SIV Vpx (4CC9) & 6/13 (46.1\%) & 5/6 (83.3\%) & 0.17$\times$ & $0.983$ & 8.1\% / 2.1\% \\
+\quad \texttt{STAT2} & Dengue NS5 (8T12) & 15/36 (41.7\%) & 99/390 (25.4\%) & 2.10$\times$ & $0.031$ & 3.6\% / 6.6\% \\
+\quad \texttt{IRF3} & Rotavirus NSP1 (5JER) & 9/18 (50.0\%) & 42/192 (21.9\%) & 3.57$\times$ & $0.012$ & 0.9\% / 2.6\% \\
+\quad \texttt{TRIM25} & FluA NS1 (5NT1) & 11/20 (55.0\%) & 56/125 (44.8\%) & 1.51$\times$ & $0.271$ & 0.0\% / 3.2\% \\
+\quad \texttt{OAS1} & dsRNA (4IG8) & 14/37 (37.8\%) & 89/253 (35.2\%) & 1.12$\times$ & $0.442$ & 3.8\% / 62.8\% \\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Conflict Complexes: Viral Entry Receptors ($n = 5$)}} \\
+\quad \texttt{ACE2} & SARS-CoV-2 RBD (6M0J) & 10/21 (47.6\%) & 159/545 (29.2\%) & 2.21$\times$ & $0.062$ & 1.4\% / 0.2\% \\
+\quad \texttt{DPP4} & MERS-CoV RBD (4L72) & 13/23 (56.5\%) & 185/674 (27.4\%) & 3.44$\times$ & $0.0038$ & 0.5\% / 1.6\% \\
+\quad \texttt{CD4} & HIV-1 gp120 (1GC1) & 11/24 (45.8\%) & 54/138 (39.1\%) & 1.32$\times$ & $0.344$ & 7.9\% / 3.6\% \\
+\quad \texttt{TFRC} & Machupo GP1 (3KAS) & 8/24 (33.3\%) & 181/583 (31.1\%) & 1.11$\times$ & $0.485$ & 1.7\% / 1.9\% \\
+\quad \texttt{NPC1} & Ebola GP (5F1B) & 6/15 (40.0\%) & 26/191 (13.6\%) & 4.23$\times$ & $0.016$ & 0.0\% / 0.9\% \\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Tandem-Repeat DNA Complex ($n = 1$)}} \\
+\quad \texttt{PRDM9} & Hotspot DNA (5EGB) & 20/50 (40.0\%) & 2/24 (8.3\%) & 7.33$\times$ & $0.0040$ & 17.1\% / 11.4\% \\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Hijacked Cellular Hub Controls ($n = 5$)}} \\
+\quad \texttt{PPIA} & HIV-1 CA (1AK4) & 1/20 (5.0\%) & 14/119 (11.8\%) & 0.40$\times$ & $0.915$ & 0.2\% / --- \\
+\quad \texttt{ELOB} & HIV-1 Vif (2MA9,4N9F) & 1/5 (20.0\%) & 4/107 (3.7\%) & 6.44$\times$ & $0.208$ & 1.7\% / --- \\
+\quad \texttt{ANP32A} & FluA Pol (8RN0) & 3/36 (8.3\%) & 8/81 (9.9\%) & 0.83$\times$ & $0.719$ & 0.2\% / 5.8\% \\
+\quad \texttt{RAE1} & SARS-CoV-2 Orf6 (7VPG) & 0/23 (0.0\%) & 1/273 (0.4\%) & 0.00$\times$ & $1.000$ & 0.0\% / 0.2\% \\
+\quad \texttt{YWHAZ} & SARS-CoV-2 N (7ZIT) & 0/18 (0.0\%) & 0/179 (0.0\%) & --- & $1.000$ & 0.8\% / 1.4\% \\
+\midrule
+\textbf{Pooled Conflict ($n=13$)} & Within-complex ($\le 4.5$\,\AA\ vs.\ core) & 127/299 (42.5\%) & 1063/3643 (29.2\%) & \textbf{1.79$\times$} & \textbf{$1.9\times 10^{-6}$} & 2.5\% / 16.5\% \\
+\textbf{Pooled Hubs ($n=5$)} & Controls ($\le 4.5$\,\AA\ vs.\ core) & 5/102 (4.9\%) & 27/759 (3.6\%) & 1.40$\times$ & $0.326$ & 0.6\% / 2.5\% \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table*}
